@@ -3,66 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>آرشیو کنفرانس‌ها و ارائه‌ها</title>
+    <title>آرشیو کنفرانس‌ها و منابع پژوهشی</title>
+    <!-- اتصال به فونت زیبای وزیرمتن -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header class="header">
+    <header class="hero">
         <div class="container">
-            <h1>آرشیو کنفرانس‌ها و پژوهش‌ها</h1>
-            <p>یادداشت‌ها، منابع و خلاصه مباحث مطرح‌شده در نشست‌ها و کلاس‌ها</p>
+            <span class="site-tag">پایگاه یادداشت‌ها و پژوهش‌ها</span>
+            <h1>آرشیو مباحث، اسناد و ارائه‌ها</h1>
+            <p>مجموعه سرفصل‌ها، فایل‌های مکمل، فیلم‌های تحلیلی و مراجع معرفی‌شده در کنفرانس‌ها</p>
         </div>
     </header>
 
     <main class="container">
-        <!-- نمونه کارت کنفرانس شماره ۱ -->
-        <article class="presentation-card">
-            <div class="card-meta">
-                <span class="badge">کنفرانس اخیر</span>
-                <span class="date">شهریور ۱۴۰۵</span>
-            </div>
+        
+        <!-- کارت نمونه یک کنفرانس جامع -->
+        <article class="conference-card">
             
-            <h2>عنوان کنفرانس یا موضوع مورد بحث</h2>
-            <p class="summary">
-                توضیح کوتاه در مورد انگیزه پژوهش و مسئله اصلی کنفرانس؛ مثلاً بررسی ابعاد نظری، زمینه‌های تاریخی یا تحلیلی که در کلاس مورد پرسش و نقد قرار گرفت.
-            </p>
-
-            <div class="section-title">محورهای اصلی بحث:</div>
-            <ul class="key-points">
-                <li>طرح مسئله و زمینه شکل‌گیری دیدگاه‌ها</li>
-                <li>بررسی استدلال‌ها و نمونه‌های تاریخی/تحلیلی</li>
-                <li>جمع‌بندی و پاسخ به پرسش‌های مخاطبان</li>
-            </ul>
-
-            <div class="section-title">منابع و مراجع:</div>
-            <p class="references">کتاب الف (نویسنده)، مقاله ب (نشریه پژوهشی، سال چاپ).</p>
-
-            <div class="card-actions">
-                <a href="#" class="btn btn-primary">دانلود خلاصه / اسلایدها (PDF)</a>
+            <div class="card-header">
+                <div>
+                    <span class="badge badge-primary">کنفرانس کلاسی</span>
+                    <span class="date">شهریور ۱۴۰۵</span>
+                </div>
+                <h2>عنوان کنفرانس: بررسی و تحلیل مسئله</h2>
             </div>
+
+            <p class="description">
+                در این نشست به زمینه‌های تاریخی، نظریه‌های بنیادی و پیامدهای اجتماعی و تحلیلی موضوع پرداخته شد. اسناد تکمیلی و منابع بررسی‌شده در ادامه دسته‌بندی شده‌اند.
+            </p>
+            <!-- ۱. بخش فایل‌ها و PDFها -->
+            <div class="category-block">
+                <div class="category-header">
+                    <span class="icon">📄</span>
+                    <h3>اسناد و فایل‌های ارائه (PDF)</h3>
+                </div>
+                <div class="grid-links">
+                    <a href="presentation1.pdf" class="file-item" target="_blank">
+                        <div class="file-info">
+                            <strong>اسلایدهای کنفرانس (نسخه کامل)</strong>
+                            <span>فایل PDF — شامل نمودارها و سرفصل‌ها</span>
+                        </div>
+                        <span class="btn-download">دریافت</span>
+                    </a>
+
+                    <a href="#" class="file-item">
+                        <div class="file-info">
+                            <strong>خلاصه یک‌صفحه‌ای نکات کلیدی</strong>
+                            <span>فایل PDF — مناسب مرور سریع</span>
+                        </div>
+                        <span class="btn-download">دریافت</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- ۲. بخش مستندها و فیلم‌های مرتبط -->
+            <div class="category-block">
+                <div class="category-header">
+                    <span class="icon">🎬</span>
+                    <h3>فیلم‌ها و مستندهای پیشنهادی</h3>
+                </div>
+                <div class="media-list">
+                    <div class="media-item">
+                        <div class="media-title">
+                            <h4>عنوان مستند یا فیلم سینمایی مرتبط</h4>
+                            <span class="meta-tag">مستند تاریخی / تحلیلی</span>
+                        </div>
+                        <p>دلیل معرفی: نمایش عینی رویدادها و واکاوی انگیزه‌های تصمیم‌گیران در دوره مورد بحث.</p>
+                    </div>
+
+                    <div class="media-item">
+                        <div class="media-title">
+                            <h4>سخنرانی و مناظره ویدیویی</h4>
+                            <span class="meta-tag">ویدیو تحلیلی</span>
+                        </div>
+                        <p>بررسی نقدها و دیدگاه‌های متقابل پیرامون نظریه مطرح‌شده در کلاس.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- ۳. بخش مراجع، کتاب‌ها و لینک‌ها -->
+            <div class="category-block">
+                <div class="category-header">
+                    <span class="icon">🔗</span>
+                    <h3>منابع، کتاب‌ها و پیوندهای تکمیلی</h3>
+                </div>
+                <ul class="ref-list">
+                    <li>
+                        <strong>کتاب مرجع اصلی:</strong> نام کتاب، اثر نویسنده (فصل‌های ۲ و ۴ مورد تأکید بود).
+                    </li>
+                    <li>
+                        <strong>مقاله پژوهشی:</strong> <a href="https://example.com" target="_blank">عنوان مقاله تحلیلی در مجله علمی ↗</a>
+                    </li>
+                </ul>
+            </div>
+
         </article>
 
-        <!-- نمونه کارت کنفرانس شماره ۲ -->
-        <article class="presentation-card">
-            <div class="card-meta">
-                <span class="badge badge-secondary">آرشیو</span>
-                <span class="date">مرداد ۱۴۰۵</span>
-            </div>
-            
-            <h2>بررسی تطبیقی و سیر تحولات موضوع</h2>
-            <p class="summary">
-                خلاصه‌ای از مباحث ارائه قبلی شامل چارچوب نظری و دستاوردهای گفت‌وگوهای کلاسی.
-            </p>
-
-            <div class="card-actions">
-                <a href="#" class="btn btn-secondary">مشاهده منابع</a>
-            </div>
-        </article>
     </main>
 
     <footer>
-        <p>طراحی و توسعه اختصاصی | تمامی یادداشت‌ها محفوظ است.</p>
+        <p>طراحی و گردآوری اختصاصی | پایگاه اشتراک‌گذاری داده‌ها و پژوهش‌ها</p>
     </footer>
 
 </body>
