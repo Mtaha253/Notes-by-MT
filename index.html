@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>آرشیو کنفرانس‌ها، منابع و آزمون‌ها</title>
+    <title>آرشیو کنفرانس‌ها، جزوات و نمونه سؤالات</title>
+    <!-- بارگذاری فونت زیبای وزیرمتن -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css">
     <style>
         * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -17,7 +18,7 @@
         .header {
             background: linear-gradient(180deg, #1e293b 0%, #0b1329 100%);
             color: #ffffff;
-            padding: 40px 16px 24px;
+            padding: 42px 16px 26px;
             text-align: center;
         }
         .tag-pill {
@@ -34,6 +35,25 @@
         .header p { color: #94a3b8; font-size: 0.88rem; }
         .container { max-width: 760px; margin: 10px auto 0; padding: 0 16px; }
         
+        /* نشانگر تقویم و گاه‌شمار */
+        .timeline-header {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin: 18px 0 12px;
+            color: #94a3b8;
+            font-size: 0.85rem;
+            border-bottom: 1px solid #1e293b;
+            padding-bottom: 6px;
+        }
+        .timeline-dot {
+            width: 10px;
+            height: 10px;
+            background-color: #38bdf8;
+            border-radius: 50%;
+            box-shadow: 0 0 8px #38bdf8;
+        }
+
         .card {
             background: #ffffff;
             border-radius: 14px;
@@ -42,17 +62,18 @@
             box-shadow: 0 8px 24px rgba(0,0,0,0.18);
             border: 1px solid #e2e8f0;
         }
-        .badge {
-            display: inline-block;
+        .date-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
             background: #e0f2fe;
-            color: #0284c7;
-            padding: 2px 10px;
+            color: #0369a1;
+            padding: 4px 12px;
             border-radius: 6px;
-            font-size: 0.75rem;
+            font-size: 0.8rem;
             font-weight: 700;
-            margin-bottom: 8px;
+            margin-bottom: 10px;
         }
-        .badge-archive { background: #f1f5f9; color: #475569; }
         .card h2 { font-size: 1.25rem; color: #0f172a; margin-bottom: 8px; font-weight: 700; }
         .intro { color: #475569; font-size: 0.88rem; margin-bottom: 18px; text-align: justify; }
 
@@ -78,7 +99,7 @@
             align-items: center;
             background: #ffffff;
             border: 1px solid #cbd5e1;
-            padding: 8px 12px;
+            padding: 9px 12px;
             border-radius: 6px;
             text-decoration: none;
             color: #1e293b;
@@ -90,7 +111,7 @@
         .tag-btn {
             background: #0284c7;
             color: #fff;
-            padding: 2px 8px;
+            padding: 3px 8px;
             border-radius: 4px;
             font-size: 0.72rem;
             font-weight: 600;
@@ -110,18 +131,28 @@
 <body>
 
     <header class="header">
-        <span class="tag-pill">پورتال مطالعاتی و کلاسی</span>
-        <h1>یادداشت‌ها، منابع و کنفرانس‌ها</h1>
-        <p>آرشیو دسته‌بندی‌شده اسلایدها، هایلایت‌ها، سؤالات متن و آزمون‌ها بر اساس تاریخ</p>
+        <span class="tag-pill">سال تحصیلی ۱۴۰۶ – ۱۴۰۵</span>
+        <h1>پایگاه یادداشت‌ها، منابع و کنفرانس‌ها</h1>
+        <p>آرشیو دسته‌بندی‌شده اسلایدها، جزوات، سؤالات متن کتاب، آزمون‌ها و فیلم‌ها بر پایه زمان برگزاری</p>
     </header>
 
     <main class="container">
-                <!-- ====================================================== -->
-        <!-- کنفرانس شماره ۱ سال تحصیلی جدید (مهر ۱۴۰۵) -->
+        <!-- نشانگر گاه‌شمار نیم‌سال اول -->
+        <div class="timeline-header">
+            <span class="timeline-dot"></span>
+            <span>گاه‌شمار ارائه‌ها • نیم‌سال اول (پاییز ۱۴۰۵)</span>
+        </div>
+
+        <!-- ====================================================== -->
+        <!-- کنفرانس شماره ۱ سال تحصیلی جدید -->
         <!-- ====================================================== -->
         <article class="card">
-            <span class="badge">نخستین کنفرانس سال تحصیلی • مهر ۱۴۰۵</span>
-            <h2>عنوان کنفرانس: [عنوان دقیق موضوع درس را اینجا بنویسید]</h2>
+            <div class="date-badge">
+                <span>🗓️</span>
+                <span>کنفرانس نخست • نیمه اول مهر ۱۴۰۵</span>
+            </div>
+            
+            <h2>موضوع کنفرانس: [عنوان مبحث درسی را اینجا بنویسید]</h2>
             <p class="intro">
                 خلاصه مباحث جلسه نخست سال تحصیلی جدید؛ شامل طرح مسئله، مفاهیم پایه کتاب درسی و محورهای گفت‌وگوی کلاسی.
             </p>
@@ -130,7 +161,7 @@
             <div class="section-box">
                 <div class="section-title">📊 اسناد و اسلایدهای ارائه</div>
                 <a href="slides-jalase1.pdf" class="file-link" target="_blank">
-                    <span>اسلایدهای کنفرانس جلسه نخست (نسخه PDF)</span>
+                    <span>اسلایدهای کنفرانس جلسه نخست (PDF)</span>
                     <span class="tag-btn">دریافت فایل</span>
                 </a>
             </div>
@@ -139,139 +170,42 @@
             <div class="section-box">
                 <div class="section-title">📝 جزوه، نکات کلیدی و هایلایت کتاب</div>
                 <a href="highlight-dars1.pdf" class="file-link" target="_blank">
-                    <span>خلاصه نکات و هایلایت صفحات آغازین درس</span>
+                    <span>خلاصه نکات و هایلایت صفحات درس (PDF)</span>
                     <span class="tag-btn tag-amber">دانلود جزوه</span>
                 </a>
             </div>
 
             <!-- ۳. سؤالات متنی کتاب -->
             <div class="section-box">
-                <div class="section-title">❓ پرسش‌ها و سؤالات مهم متن کتاب</div>
+                <div class="section-title">❓ پرسش‌ها و سؤالات مهم متن درس</div>
                 <ul class="clean-list">
-                    <li><strong>سؤال ۱:</strong> [مهم‌ترین سؤال متن درس از دیدگاه دبیر/طراح]</li>
-                    <li><strong>سؤال ۲:</strong> [سؤال تحلیلی یا مفهومی درس نخست]</li>
-                    <li><strong>سؤال ۳:</strong> [تعریف کلیدواژه‌های اصلی صفحات درس]</li>
+                    <li><strong>سؤال ۱:</strong> [مهم‌ترین سؤال متن درس اول]</li>
+                    <li><strong>سؤال ۲:</strong> [سؤال تحلیلی و مفهومی]</li>
+                    <li><strong>سؤال ۳:</strong> [تعریف اصطلاحات و کلیدواژه‌ها]</li>
                 </ul>
             </div>
 
-            <!-- ۴. آزمون سنجش یا نظرسنجی کلاسی -->
+            <!-- ۴. آزمون سنجش و گوگل‌فرم -->
             <div class="section-box">
-                <div class="section-title">📝 آزمون ارزیابی و ثبت دیدگاه</div>
+                <div class="section-title">📝 آزمون ارزیابی و کوئیز کلاسی</div>
                 <a href="https://forms.gle/YOUR_FORM_LINK" class="file-link" target="_blank" style="background: #ecfdf5; border-color: #a7f3d0;">
-                    <span>شرکت در کوئیز تستی مبحث نخست (گوگل‌فرم)</span>
+                    <span>شرکت در آزمون تستی این مبحث (گوگل‌فرم)</span>
                     <span class="tag-btn tag-emerald">ورود به آزمون</span>
                 </a>
             </div>
 
-            <!-- ۵. فیلم‌ها و مستندهای پیشنهادی -->
+            <!-- ۵. فهرست فیلم‌ها و مستندهای پیشنهادی -->
             <div class="section-box">
-                <div class="section-title">🎬 فیلم‌ها و مستندهای مرتبط با درس اول</div>
+                <div class="section-title">🎬 فیلم‌ها و مستندهای پیشنهادی مرتبط</div>
                 <ul class="clean-list">
-                    <li><strong>نام مستند / فیلم نخست</strong> — اثر کارگردان، سال ساخت (توضیح ارتباط موضوعی با درس).</li>
+                    <li><strong>نام مستند / فیلم نخست</strong> — سال ساخت، کارگردان (توضیح ارتباط موضوعی با درس).</li>
                 </ul>
             </div>
         </article>
-
-        <!-- ====================================================== -->
-        <!-- بسته کامل جلسه اخیر: تاریخ ۲۵ شهریور ۱۴۰۵ -->
-        <!-- ====================================================== -->
-        <article class="card">
-            <span class="badge">کنفرانس اخیر • ۲۵ شهریور ۱۴۰۵</span>
-            <h2>عنوان مبحث: تحلیل مسئله و مفاهیم بنیادی</h2>
-            <p class="intro">
-                خلاصه مباحث مطرح‌شده در نشست ۲۵ شهریور به همراه جزوات، سؤالات متن کتاب، آزمون تثبیت و مراجع معرفی‌شده.
-            </p>
-
-            <!-- ۱. اسلایدهای ارائه -->
-            <div class="section-box">
-                <div class="section-title">📊 اسناد و اسلایدهای ارائه</div>
-                <a href="slides-25shahrivar.pdf" class="file-link" target="_blank">
-                    <span>اسلایدهای کامل کنفرانس (PDF)</span>
-                    <span class="tag-btn">دریافت فایل</span>
-                </a>
-            </div>
-
-            <!-- ۲. هایلایت و جزوات درسی -->
-            <div class="section-box">
-                <div class="section-title">📝 جزوه، نکات کلیدی و هایلایت کتاب</div>
-                <a href="highlight-25shahrivar.pdf" class="file-link" target="_blank">
-                    <span>خلاصه تک‌برگ و هایلایت‌های کتاب درسی (PDF)</span>
-                    <span class="tag-btn tag-amber">دانلود جزوه</span>
-                </a>
-            </div>
-
-            <!-- ۳. سؤالات متنی کتاب -->
-            <div class="section-box">
-                <div class="section-title">❓ پرسش‌ها و سؤالات مهم متن کتاب</div>
-                <ul class="clean-list">
-                    <li><strong>سؤال ۱:</strong> علل و زمینه‌های تاریخی رخداد موضوع درس چه بود؟</li>
-                    <li><strong>سؤال ۲:</strong> دیدگاه اندیشمندان مختلف در خصوص این مسئله چه تفاوت‌هایی دارد؟</li>
-                    <li><strong>سؤال ۳:</strong> تعریف اصطلاحات کلیدی مطرح در متن صفحات ۲۰ الی ۲۵ کتاب.</li>
-                </ul>
-            </div>
-
-            <!-- ۴. آزمون سنجش و فرم پرسش‌وپاسخ -->
-            <div class="section-box">
-                <div class="section-title">📝 آزمون ارزیابی و ثبت نظرات</div>
-                <a href="https://forms.gle/YOUR_TEST_LINK" class="file-link" target="_blank" style="background: #ecfdf5; border-color: #a7f3d0;">
-                    <span>شرکت در کوئیز تستی این جلسه (گوگل‌فرم)</span>
-                    <span class="tag-btn tag-emerald">ورود به آزمون</span>
-                </a>
-            </div>
-
-            <!-- ۵. فهرست فیلم‌های مرتبط با این جلسه -->
-            <div class="section-box">
-                <div class="section-title">🎬 فیلم‌ها و مستندهای پیشنهادی این جلسه</div>
-                <ul class="clean-list">
-                    <li><strong>نام مستند الف</strong> — سال ساخت، اثر کارگردان (نمایش بستر تاریخی مبحث).</li>
-                    <li><strong>نام فیلم سینمایی ب</strong> — واکاوی دراماتیک ابعاد مورد مناقشه در کلاس.</li>
-                </ul>
-            </div>
-        </article>
-        <!-- ====================================================== -->
-        <!-- بسته جلسه قبل: تاریخ ۱۰ شهریور ۱۴۰۵ -->
-        <!-- ====================================================== -->
-        <article class="card">
-            <span class="badge badge-archive">جلسه پیشین • ۱۰ شهریور ۱۴۰۵</span>
-            <h2>عنوان مبحث: کلیات نظری و تعاریف آغازین</h2>
-            <p class="intro">
-                خلاصه مباحث جلسه نخست؛ شامل تعاریف ساختاری، پرسش‌های اولیه متن و منابع مقدماتی.
-            </p>
-
-            <div class="section-box">
-                <div class="section-title">📊 اسناد و اسلایدهای ارائه</div>
-                <a href="slides-10shahrivar.pdf" class="file-link" target="_blank">
-                    <span>اسلایدهای ارائه جلسه نخست (PDF)</span>
-                    <span class="tag-btn">دریافت فایل</span>
-                </a>
-            </div>
-
-            <div class="section-box">
-                <div class="section-title">📝 جزوه و هایلایت کتاب</div>
-                <a href="highlight-10shahrivar.pdf" class="file-link" target="_blank">
-                    <span>هایلایت‌های صفحات مقدماتی درس</span>
-                    <span class="tag-btn tag-amber">دانلود جزوه</span>
-                </a>
-            </div>
-
-            <div class="section-box">
-                <div class="section-title">❓ پرسش‌های متن درس</div>
-                <ul class="clean-list">
-                    <li><strong>سؤال ۱:</strong> تعریف دقیق مفهوم مورد بحث از نگاه نظریه‌پردازان اولیه.</li>
-                </ul>
-            </div>
-
-            <div class="section-box">
-                <div class="section-title">🎬 فیلم‌های پیشنهادی جلسه نخست</div>
-                <ul class="clean-list">
-                    <li><strong>مستند کوتاه معرفی جریان‌ها</strong> — بررسی خط زمانی و شخصیت‌ها.</li>
-                </ul>
-            </div>
-        </article>
-
     </main>
 
-    <footer style="text-align: center; padding: 24px 16px 10px; margin-top: 24px; border-top: 1px solid #1e293b; color: #94a3b8;">
+    <!-- فوتر پایانی با نام طراح -->
+    <footer style="text-align: center; padding: 24px 16px 12px; margin-top: 24px; border-top: 1px solid #1e293b; color: #94a3b8;">
         <p style="font-size: 0.92rem; margin: 0;">طراحی و گردآوری: <strong style="color: #38bdf8; font-family: sans-serif; letter-spacing: 1px; font-size: 1.02rem;">M.T.Afzali</strong></p>
         <p style="font-size: 0.78rem; color: #64748b; margin-top: 4px;">پایگاه یادداشت‌ها، ارائه‌ها و اسناد پژوهشی</p>
     </footer>
